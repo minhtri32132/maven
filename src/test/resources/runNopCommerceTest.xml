@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="NopCommerce">
+  <test name="Run on Firefox">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="comm.nopcommerce.user.Switch_Page"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->

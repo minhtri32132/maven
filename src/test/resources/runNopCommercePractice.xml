@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="NopCommerce">
+
+<parameter name="envWorkPlace" value="local"/>
+<parameter name = "url" value="https://demo.nopcommerce.com/"/>
+
+
+
+  <test name="Run on Firefox">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="ipAddress" value="localhost"/>
+  <parameter name="port" value="4445"/>
+    <classes>
+      
+      <class name="com.nopcomerce.practice.user.MyAccountTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+  <listeners>
+  	<listener class-name="commons.MethodListener"></listener>
+  	<listener class-name="reportConfig.ExTentTestListener"></listener>
+  	
+  	
+  	
+  	
+  	</listeners></suite> <!-- Suite -->

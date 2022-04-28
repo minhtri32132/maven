@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="NopCommerce">
+
+<parameter name = "url" value="https://demo.nopcommerce.com/"/>
+  <test name="Run on Firefox">
+  <parameter name="browser" value="FIREFOX"/>
+    <classes>
+      <class name="comm.nopcommerce.user.commonScenario.CommonScenario"/>
+      <class name="comm.nopcommerce.user.LogWithCookie"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+  <listeners>
+  	<listener class-name="commons.MethodListener"></listener></listeners></suite> <!-- Suite -->
